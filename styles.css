@@ -163,6 +163,13 @@ footer {
   display: none;
 }
 
+.mySlides img {
+  width: 100%;
+  /* Makes images responsive */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
 .prev,
 .next {
   cursor: pointer;
@@ -186,6 +193,18 @@ footer {
 .prev {
   left: 0;
   border-radius: 0 3px 3px 0;
+}
+
+/* Adjust button sizes on mobile */
+@media (max-width: 600px) {
+
+  .prev,
+  .next {
+    font-size: 16px;
+    /* Smaller font size for buttons */
+    padding: 12px;
+    /* Smaller padding for buttons */
+  }
 }
 
 .prev:hover,
@@ -248,5 +267,15 @@ footer {
   .service-list li {
     font-size: 1.2em;
     /* Slightly increase font size on mobile */
+  }
+
+  .portfolio-section {
+    padding: 20px;
+    /* Adjust padding for mobile */
+  }
+
+  .portfolio-section h2 {
+    font-size: 1.5em;
+    /* Smaller heading for mobile */
   }
 }
