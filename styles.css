@@ -290,3 +290,43 @@ footer {
     /* Adjust dot size */
   }
 }
+
+/* iPhone 10/11 (375px width) */
+@media (max-width: 375px) {
+  header nav li {
+    margin: 0 10px;
+    /* Reduce margin for nav items */
+  }
+
+  .banner h1 {
+    font-size: 1.5em;
+    /* Adjust heading size */
+  }
+}
+
+/* iPhone 12/13 (390px width) */
+@media (max-width: 390px) {
+  .service-list li {
+    font-size: 1.4em;
+    /* Adjust font size for services */
+  }
+}
+
+/* iPhone 14/15 (430px width) */
+@media (max-width: 430px) {
+  .banner {
+    padding: 200px 0;
+    /* Adjust banner padding */
+  }
+
+  .side-image {
+    width: 230px;
+    /* Adjust side image size */
+  }
+
+  .prev,
+  .next {
+    font-size: 18px;
+    /* Increase button size slightly */
+  }
+}
