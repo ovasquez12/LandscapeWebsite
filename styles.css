@@ -144,13 +144,13 @@ footer {
 
 .portfolio-section {
   background-color: #f0f0f0;
-  padding: 20px 160px;
-}
-
-.portfolio-section h2 {
-  color: #000000;
-  font-size: 2em;
-  margin-bottom: 30px;
+  padding: 20px 10%;
+  /* Adjusted for smaller screens */
+  display: flex;
+  flex-direction: column;
+  /* Stack content vertically on mobile */
+  align-items: center;
+  /* Center images horizontally */
 }
 
 .slideshow-container {
@@ -168,6 +168,8 @@ footer {
   /* Makes images responsive */
   height: auto;
   /* Maintain aspect ratio */
+  max-width: 800px;
+  /* Limit maximum width for larger screens */
 }
 
 .prev,
@@ -270,12 +272,21 @@ footer {
   }
 
   .portfolio-section {
-    padding: 20px;
-    /* Adjust padding for mobile */
+    padding: 10px;
+    /* Reduce padding */
   }
 
-  .portfolio-section h2 {
-    font-size: 1.5em;
-    /* Smaller heading for mobile */
+  .text {
+    font-size: 16px;
+    /* Adjust text size */
+    padding: 5px;
+    /* Adjust padding for better mobile display */
+  }
+
+  .dot {
+    height: 10px;
+    /* Adjust dot size */
+    width: 10px;
+    /* Adjust dot size */
   }
 }
