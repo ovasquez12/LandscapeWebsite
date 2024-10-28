@@ -1,0 +1,252 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14pt;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  background-image: url('pic1.jpg');
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding: 280px 0;
+  color: white;
+  height: 170px;
+  transition: opacity 0.3s ease-out;
+}
+
+.banner-content {
+  margin-top: 50px;
+}
+
+.banner h1 {
+  background-color: #02461b;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+header {
+  background-color: #02461b;
+  color: white;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+header nav li {
+  margin: 0 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  padding: 40px 0px;
+  text-align: center;
+}
+
+h1,
+h2 {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #02461b;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.about-container {
+  color: #717171;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.about-container .content {
+  max-width: 800px;
+  width: 100%;
+  text-align: left;
+}
+
+.about-container h1 {
+  color: #333333;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-container h2 {
+  color: #555555;
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.about-container p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.service-list {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.services-container {
+  display: flex;
+  align-items: center;
+  /* Vertically center the list */
+  justify-content: center;
+  /* Center the content horizontally */
+}
+
+.side-image {
+  width: 250px;
+  /* Set width for side images */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin: 0 20px;
+  /* Add some spacing around the images */
+}
+
+.service-list ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.service-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+
+
+.portfolio-section {
+  background-color: #f0f0f0;
+  padding: 20px 160px;
+}
+
+.portfolio-section h2 {
+  color: #000000;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: #02461b;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #43f652df;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 3px;
+  width: 100%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .side-image {
+    width: 200px;
+    /* Adjust to a larger size on mobile */
+  }
+
+  .service-list li {
+    font-size: 1.2em;
+    /* Slightly increase font size on mobile */
+  }
+}
