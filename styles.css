@@ -121,7 +121,7 @@ footer {
 }
 
 .side-image {
-  width: 250px;
+  width: 350px;
   /* Set width for side images */
   height: auto;
   /* Maintain aspect ratio */
@@ -179,9 +179,9 @@ footer {
   top: 50%;
   width: auto;
   padding: 16px;
-  color: #02461b;
+  color: #aceec3;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 25px;
   transition: 0.6s ease;
   user-select: none;
   transform: translateY(-50%);
